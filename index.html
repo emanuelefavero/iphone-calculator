@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <meta
+      name="description"
+      content="A simple calculator app built with vanilla Javascript"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="calculator">
+        <button class="display" value="0">0</button>
+        <div class="buttons">
+          <div class="numbersAndModifiers">
+            <div class="modifiers">
+              <button class="modifier" id="clear">AC</button>
+              <button class="modifier" id="plusMinus">+/-</button>
+              <button class="modifier" id="percent">%</button>
+            </div>
+            <div class="numbers">
+              <button class="number" value="7">7</button>
+              <button class="number" value="8">8</button>
+              <button class="number" value="9">9</button>
+              <button class="number" value="4">4</button>
+              <button class="number" value="5">5</button>
+              <button class="number" value="6">6</button>
+              <button class="number" value="1">1</button>
+              <button class="number" value="2">2</button>
+              <button class="number" value="3">3</button>
+              <button class="number zero" value="0">0</button>
+              <button class="number" id="point" value=".">.</button>
+            </div>
+          </div>
+          <div class="operators">
+            <button class="operator" id="divide" value="divide">÷</button>
+            <button class="operator" id="multiply" value="multiply">*</button>
+            <button class="operator" id="subtract" value="subtract">-</button>
+            <button class="operator" id="add" value="add">+</button>
+            <button class="operator" id="equals" value="equals">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- this fixes exports browser error during testing with jest -->
+    <!-- <script>
+      // prettier-ignore
+      var exports = {};
+    </script> -->
+    <script src="app.js"></script>
+  </body>
+</html>
