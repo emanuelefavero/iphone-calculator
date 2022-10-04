@@ -8,3 +8,7 @@ A simple calculator app built with vanilla Javascript. It is similar to the iPho
 
 - Clone the repo
 - Open the `index.html` file in your browser
+
+# DEMO
+
+- [DEMO](https://emanuelefavero.github.io/calculator-vanilla-js/)
