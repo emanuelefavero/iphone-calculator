@@ -6,7 +6,7 @@ A simple calculator app built with vanilla Javascript for the web. It is similar
 
 ## Live Demo
 
-- [Try it now](https://emanuelefavero.github.io/calculator-vanilla-js/)
+- [Try it now](https://emanuelefavero.github.io/iphone-calculator/)
 
 #### Screenshot
 
