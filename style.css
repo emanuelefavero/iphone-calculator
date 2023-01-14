@@ -10,9 +10,15 @@ It could be useful to increase and decrease buttons size automatically with grid
   --bg-color-number: rgb(51, 51, 51);
   --bg-color-operator: rgb(241, 164, 60);
 
+  /* Clicked state */
   --bg-color-clicked-modifier: rgb(200, 200, 200);
   --bg-color-clicked-number: rgba(115, 115, 115);
   --bg-color-clicked-operator: rgb(255, 189, 96);
+
+  /* Hover state */
+  --bg-color-hover-modifier: rgb(182, 182, 182);
+  --bg-color-hover-number: rgba(83, 83, 83);
+  --bg-color-hover-operator: rgb(248, 177, 78);
 }
 
 /* General Styling */
@@ -47,7 +53,7 @@ body {
   font-family: -apple-system, 'Helvetica Neue', Helvetica, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
 
   width: 70px;
   height: 70px;
@@ -149,9 +155,27 @@ body {
   background: var(--bg-color-operator);
   color: var(--color);
   transition: 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 0.3rem;
 }
 
-/* Buttons On Click Fade Animation */
+/* Buttons On Over */
+.calculator .modifier:hover {
+  background-color: var(--bg-color-hover-modifier);
+}
+
+.calculator .number:hover {
+  background-color: var(--bg-color-hover-number);
+}
+
+.calculator .operator:hover {
+  background: var(--bg-color-hover-operator);
+}
+
+/* Buttons On Click */
 .calculator .modifier.clicked {
   background-color: var(--bg-color-clicked-modifier);
 }
